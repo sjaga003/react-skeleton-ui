@@ -37,3 +37,7 @@ h2 {
   grid-template-columns: 2fr 1fr;
   gap: 100px;
 }
+
+.shimmer-wrapper {
+  position: absolute;
+}

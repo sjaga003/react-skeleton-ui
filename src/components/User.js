@@ -23,7 +23,7 @@ const User = () => {
         </div>
       ) : (
         <div>
-          <SkeletonProfile theme="dark" />
+          <SkeletonProfile />
         </div>
       )}
     </div>
