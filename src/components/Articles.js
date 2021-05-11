@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import SkeletonArticle from '../skeletons/SkeletonArticle';
-import SkeletonElement from '../skeletons/SkeletonElement';
 
 const Articles = () => {
   const [articles, setArticles] = useState(null);
@@ -24,7 +23,7 @@ const Articles = () => {
               <p>{article.body}</p>
             </div>
           ))
-        : [1, 2, 3, 4, 5].map((n) => <SkeletonArticle key={n} />)}
+        : [1, 2, 3, 4, 5].map((n) => <SkeletonArticle key={n} theme="dark" />)}
     </div>
   );
 };
