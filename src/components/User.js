@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import SkeletonProfile from '../skeletons/SkeletonProfile';
 
 const User = () => {
   const [profile, setProfile] = useState(null);
@@ -21,7 +22,9 @@ const User = () => {
           <a href={profile.website}>{profile.website}</a>
         </div>
       ) : (
-        <div>Loading...</div>
+        <div>
+          <SkeletonProfile />
+        </div>
       )}
     </div>
   );
